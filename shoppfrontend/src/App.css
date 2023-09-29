@@ -1,0 +1,629 @@
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.active{
+  color: rgb(255, 255, 255) !important;
+
+}
+
+.App-link {
+  color: rgb(255, 255, 255);
+}
+
+button:hover{
+  color: white !important;
+}
+
+ul{
+  list-style: none !important;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+li a:hover {
+  text-decoration: none;
+  color: rgb(238, 81, 14);
+  transition: color 0.3s;
+
+}
+
+.navbar-custom{
+  background-color: rgb(238, 81, 14);
+  backdrop-filter: blur(2px);
+}
+
+
+.nav-link{
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link:hover{
+  text-decoration: none;
+  color: rgb(34, 70, 147) !important;
+  transition: color 0.3s;
+}
+
+.btnPrimaryBiru{
+  color: rgb(34, 70, 147) !important;
+  border-color:  rgb(34, 70, 147) !important;
+}
+.btnPrimaryBiru:hover{
+  color: rgb(255, 255, 255) !important;
+  border-color:  rgb(34, 70, 147) !important;
+  background-color: rgb(34, 70, 147) !important;
+}
+
+.backImg{
+  background-image: url("./img/shops.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.text-glow{
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.backLanding{
+  background-image: url("./img/backLanding.jpg");
+  background-size: 100%;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.body{
+  padding: 8%;
+  backdrop-filter: blur(5px);
+}
+.teksprimary{
+  color: rgb(34, 70, 147) !important;
+}
+
+.strikethrough-text {
+  text-decoration: line-through;
+}
+
+
+.teksoren{
+  color: rgb(238, 81, 14) !important;
+}
+
+.btnPrimary{
+  color: rgb(238, 81, 14) !important;
+  border-color:  rgb(238, 81, 14) !important;
+}
+.btnPrimary:hover{
+  color: rgb(255, 255, 255) !important;
+  border-color:  rgb(238, 81, 14) !important;
+  background-color: rgb(238, 81, 14) !important;
+}
+.btnOren{
+  border-color:  rgb(238, 81, 14) !important;
+  background-color: rgb(238, 81, 14) !important;
+  color: rgb(255, 255, 255) !important;
+}
+.btnOren:hover {
+  border-color:  rgb(203, 83, 31) !important;
+  background-color: rgb(188, 76, 28) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.btnBiru{
+  border-color:  rgb(34, 70, 147) !important;
+  background-color: rgb(34, 70, 147) !important;
+  color: rgb(255, 255, 255) !important;
+}
+.btnBiru:hover {
+  border-color:  rgb(34, 70, 147) !important;
+  background-color: rgb(24, 51, 108) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+
+.linkprimary{
+  color: rgb(238, 81, 14) !important;
+  transition: color 0.5s;
+  text-decoration: none;
+}
+
+.linkprimary:hover{
+  color: rgb(255, 115, 55) !important;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.offerSuccess{
+  background-color: rgba(205, 230, 207, 0.599) !important;
+}
+
+.overflowContent{
+  max-height: 450px !important;
+  overflow-y: auto;
+}
+
+.overside{
+  max-width: 50% !important;
+  overflow-x: auto;
+}
+.overside::-webkit-scrollbar {
+  height: 5px;
+}
+
+.overside::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Set the background color of the track to transparent */
+
+}
+.overside::-webkit-scrollbar-thumb {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+
+  border-radius: 5px;
+}
+
+.overside::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+
+}
+
+.overside2{
+  max-width: 100% !important;
+  overflow-x: auto;
+}
+
+.overside2::-webkit-scrollbar {
+  height: 2px;
+}
+
+.overside2::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.overside2::-webkit-scrollbar-thumb {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+  border-radius: 5px;
+}
+
+.overside2::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+
+}
+
+.overflowOrder{
+  max-height: 200px !important;
+  overflow-y: auto;
+}
+
+.overflowOrder::-webkit-scrollbar {
+  width: 2px;
+}
+
+.overflowOrder::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.overflowOrder::-webkit-scrollbar-thumb {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+  border-radius: 5px;
+}
+
+.overflowOrder::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+
+}
+
+
+.overflowContent2{
+  max-height: 900px;
+  overflow-y: auto;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.overflowContent2::-webkit-scrollbar {
+  width: 5px;
+}
+
+.overflowContent2::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Set the background color of the track to transparent */
+
+}
+.btnPls{
+  border-radius: 50% !important;
+  padding: 1% !important;
+}
+
+
+.plusBtn{
+  font-size:40px !important;
+}
+
+.overflowContent2::-webkit-scrollbar-thumb {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+
+  border-radius: 5px;
+}
+
+.overflowContent2::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+
+}
+
+.overflowContent::-webkit-scrollbar {
+  width: 3px;
+}
+
+.overflowContent::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Set the background color of the track to transparent */
+
+}
+
+.overflowContent::-webkit-scrollbar-thumb {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+
+  border-radius: 5px;
+}
+
+.overflowContent::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+
+}
+
+.overCanvas{
+  max-height: 100% !important;
+  overflow-y: auto;
+}
+
+.overCanvas::-webkit-scrollbar {
+  width: 3px;
+}
+
+.overCanvas::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Set the background color of the track to transparent */
+
+}
+.overCanvas::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.698) !important;;
+  transition: background-color 0.5s;
+
+  border-radius: 5px;
+}
+
+.overCanvas::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(238, 81, 14) !important;;
+  transition: background-color 0.5s;
+
+}
+
+/* Add this to your CSS stylesheet */
+.offcanvas-menu .offcanvas-body {
+  overflow: hidden; /* Hide overflow */
+}
+
+.scrollable-content {
+  max-height: calc(100vh - 56px); /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.bg-oren{
+  background-color: rgb(238, 81, 14) !important;;
+
+}
+
+.loginBox{
+  padding: 5% ;
+  border: 0.8px solid rgba(0, 0, 0, 0.239);
+  border-radius: 20px;
+  background-color: #ffffffcc;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.voucherBox{
+  background-image: url("./img/shops.jpg");
+  background-size: 100%;
+  border: 0.8px solid rgba(0, 0, 0, 0.239);
+  background-color: #ffffffcc;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.storeBox{
+  padding: 5% ;
+  border: 0.8px solid rgba(0, 0, 0, 0.239);
+  width: 500px;
+  border-radius: 20px;
+  background-color: #ffffffcc;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  transition: border 0.5s,  padding 0.5s, transform 0.5s;
+}
+
+.storeBox:hover{
+  padding: 5% ;
+  border: 0.8px solid rgba(0, 0, 0, 0.239);
+  width: 500px;
+  border-radius: 20px;
+  background-color: #ffffffcc;
+  border: 0.8px solid rgb(254, 106, 0);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2%);
+  transition: border 0.5s,  padding 0.5s, transform 0.5s;
+
+}
+
+.hoverBox{
+  padding: 5% ;
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  border-radius: 20px;
+  background-color: #ffffffcc;
+  transition: border 0.5s, padding 0.5s;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hoverBox:hover{
+  padding: 2% ;
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  border-radius: 20px;
+  background-color: #ffffffcc;
+  transition: border 0.5s,  padding 0.5s;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.productBox{
+  padding: 20px ;
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  border-radius: 20px;
+  background-color: #ffffffcc;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  height: 400px;
+  transition: border 0.5s,  padding 0.5s, transform 0.5s;
+}
+
+.productBox:hover{
+  border: 0.8px solid rgb(254, 106, 0);
+  background-color: #ffffffcc;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: border 0.5s,  padding 0.5s,  transform 0.5s;
+  transform: translateY(-2%);
+}
+
+.productImg{
+  height: 160px !important;
+  width: 160px !important;
+  
+}
+
+.landingBox{
+  padding: 5% ;
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.771);
+  backdrop-filter: blur(10px) !important;
+  
+}
+
+
+.adminBox{
+  padding: 7% ;
+  height: 90%;
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  transition: border 0.5s, transform 0.5s, padding 0.5s;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.adminBox:hover{
+  padding: 1% ;
+  border: 0.8px solid rgba(9, 53, 196, 0.743);
+  border-radius: 20px;
+  transform: translateY(-5%);
+  transition: border 0.5s, transform 0.5s, padding 0.5s;
+}
+
+.aboutImg{
+  border-radius: 25px 60px 25px !important;
+}
+
+.homeImg{
+  border-radius: 300px 100px 200px 355px;
+  transition: transform 0.5s;
+
+}
+
+.homeImg:hover{
+  border-radius: 300px 100px 200px 355px;
+  transform: translateY(-4%);
+  transition: transform 0.5s;
+}
+.mightKnow{
+  border-radius: 50%;
+  height: 50px;
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  width: 50px !important;
+}
+
+.like{
+  font-size: 20px;
+
+}
+.profileDash{
+  border-radius: 50%;
+  height: 200px;
+  transform: translateY(39%);
+  width:  200px !important;
+}
+
+.profileDash2{
+  border-radius: 50%;
+  height: 100px;
+  width:  100px !important;
+}
+
+.profilePreview{
+  border-radius: 50%;
+  height: 200px;
+  width:  200px !important;
+}
+
+.profileBox{
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  background-image: url("./img/shops.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-radius: 20px;
+  height: 100% !important;
+}
+
+.profileBox1{
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  background-image: url("./img/shops.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  border-radius: 20px 20px 0px 0px;
+  height: 100% !important;
+}
+
+.absolute{
+  position: absolute;
+  left: 25% !important;
+  width: 5% !important;
+  height: 10% !important;
+  margin-bottom: 5% !important;
+
+}
+
+
+
+
+.carousel-custom{
+  height: 380px;
+  border-radius: 20px !important;
+}
+
+.carousel-image{
+  height: 380px !important;
+  border-radius: 20px !important;
+}
+
+
+
+.profilePadding{
+  padding: 8% 8% 0% 8%;
+  transform: translateY(-20%);
+}
+
+.profilePaddingPublic{
+  padding: 8% 8% 0% 8%;
+  transform: translateY(-23%);
+}
+
+.topImg{
+  border-radius: 20px 20px 0 0;
+  /* background-image: url("./img/banner.jpg"); */
+  background-size: cover;
+  padding: 13%;
+}
+.icon{
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+.threadBox{
+  border-radius: 20px;
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  padding-top: 6%;
+
+}
+.threadBody,.headerThread{
+  /* padding-right :  2%;
+  padding-left: 6%; */
+
+}
+.checkJobs{
+  /* background-image: url("./img/work.jpg"); */
+  background-size: cover;
+}
+.jobBox{
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  border-radius: 20px;
+  background-color: #c0c3c844;
+}
+.boxBlur{
+  backdrop-filter: blur(3px);
+  border-radius: 20px !important;
+  padding: 5%;
+}
+.jobDetail{
+  height: 600px;
+  width: 600px !important;
+
+}
+.modalJob{
+  width: 900px !important;
+}
+.thread{
+  padding: 6%;
+  border: 0.8px solid rgba(0, 0, 0, 0.144);
+  background-color: white;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
