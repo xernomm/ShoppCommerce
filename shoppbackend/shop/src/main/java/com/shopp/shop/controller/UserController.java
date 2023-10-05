@@ -1531,6 +1531,13 @@ public class UserController {
 
     @PutMapping("/order/{orderId}/updateStock/{productId}")
     public ResponseEntity<Object> updateStock(@PathVariable Long orderId, @PathVariable Long productId){
+
+        Optional<Product> idProduct = productRepository.findById(productId);
+        if (idProduct.isEmpty()){
+            CustomErrorResponse error = new CustomErrorResponse("Order not found.");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(error);
+        }
+
         PurchaseOrder purchaseOrder = orderRepository.findById(orderId)
                 .orElseThrow(() -> new RuntimeException("Purchase order not found"));
 
@@ -1552,6 +1559,11 @@ public class UserController {
             if (currentStock < quantity) {
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                         .body("Insufficient stock for product ID: " + productID);
+            }
+
+            int ifZero = currentStock - quantity;
+            if (ifZero == 0){
+                product.setStock(0);
             }
 
             product.setStock(currentStock - quantity);
