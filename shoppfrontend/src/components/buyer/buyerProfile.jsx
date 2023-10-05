@@ -159,7 +159,7 @@ export const BuyerProfile = () => {
                 </>
                 )}
                   </div>
-                  
+                
                   <div className="col-12">
                   <div className=" profileBox col-12 mt-3">
                         <Link to="/myOrders" className="linkprimary ">

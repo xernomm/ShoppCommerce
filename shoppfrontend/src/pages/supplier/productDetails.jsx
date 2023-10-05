@@ -76,7 +76,7 @@ export const ProductDetails = ({selectedProduct}) => {
           });
           })
           .catch((error) => {
-            // Handle errors (if needed)
+            Swal.fire('Insufficient stock', 'Sorry! you are too late', 'error')
             console.error(error);
           });
       };

@@ -130,7 +130,9 @@ export const ShoppPayButton = ({ selectedOrder }) => {
       
             const newStock = currentStock - quantity;
       
-            await axios.put(`http://localhost:8080/shop/order/${orderId}/updateStock/${productId}`, { newStock }, { headers });
+            await axios.put(`http://localhost:8080/shop/order/${orderId}/updateStock/${productId}`, { newStock }, { headers }).then(
+               handleClearItems()
+            );
           }
       
           console.log('Stock updated successfully');
@@ -158,8 +160,7 @@ export const ShoppPayButton = ({ selectedOrder }) => {
             confirmButtonColor: "#127d3f",
             confirmButtonText: "Ok",
             preConfirm: async () => {
-                handleUpdateStock()
-               await handleClearItems()
+                await handleUpdateStock()
                 window.close();
             },
           });

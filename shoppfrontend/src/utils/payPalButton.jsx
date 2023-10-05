@@ -77,7 +77,9 @@ const PayPalButton = ({ orderId }) => {
       
             const newStock = currentStock - quantity;
       
-            await axios.put(`http://localhost:8080/shop/order/${orderId}/updateStock/${productId}`, { newStock }, { headers });
+            await axios.put(`http://localhost:8080/shop/order/${orderId}/updateStock/${productId}`, { newStock }, { headers }).then(
+              handleClearItems()
+            );
           }
       
           console.log('Stock updated successfully');
@@ -149,18 +151,9 @@ const PayPalButton = ({ orderId }) => {
             headers,
           })
           .then((response) => {
+            handleIsPaid();
             console.log("DELETED INFO:" + response.data);
-            setCarts([]); // Set carts to an empty array when cleared
-            Swal.fire({
-              icon: "success",
-              title: "Cart is now empty!",
-              footer: "",
-              confirmButtonColor: "#127d3f",
-              confirmButtonText: "Ok",
-              preConfirm: () => {
-                window.location.reload();
-              },
-            });
+            setCarts([]); 
           })
           .catch((error) => {
             console.error(error);
@@ -180,11 +173,9 @@ const PayPalButton = ({ orderId }) => {
             footer: "",
             confirmButtonColor: "#127d3f",
             confirmButtonText: "Ok",
-            preConfirm:  () => {
-                handleUpdateStock()
-                handleIsPaid()
-                handleClearItems();
-                window.location.href="/myCart";
+            preConfirm: async () => {
+               await handleUpdateStock()
+               window.location.href="/myOrders"
             },
           });
 
